@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- İconScout CSS-->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+    <title>Hancer Gumus</title>
+
+ 
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="image/logo/hancer.png" alt=""></a>
+
+        
+
+        <div class="nav-icon">
+            
+            <a href="login.html"><i class='bx bx-user'></i></a>
+            <a href="#"><i class='bx bx-cart' ></i></a>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <!-- Glex Container-->
+    <div class="container">
+       
+        <div class="forms">           
+            <div class="form signup">
+                <span class="title">Üye Ol</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Adınızı Giriniz">
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="E Postanızı Giriniz">
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" id="myInput" placeholder="Şifreni Oluştur">
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                   
+                    <div class="input-field button">
+                        <input type="button" value="Üye Ol">
+                    </div> 
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox"id="logCheck" onclick="myFunction()">
+                            <label class="text" for="logCheck" style="color:#E59538">Şifreyi Göster</label>
+                        </div>
+                        <a href="login.html" class="text forgot-link">Giriş Yap</a>
+                    </div>
+                    
+
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("myInput");
+                            if (x.type === "password") {
+                                x.type = "text";
+                            } else {
+                                x.type = "password";
+                            }
+                        }
+                    </script>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
